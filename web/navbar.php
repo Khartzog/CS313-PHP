@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+.active {
+  background-color: #4CAF50;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -33,9 +36,9 @@ li a:hover {
 </head>
 <body>
 <ul>
-  <li><a href="home.php">Home</a></li>
-  <li><a href="login.php">Login</a></li>
-  <li><a href="about-us.php">About Us</a></li>
+  <li><a class="active" href="home.php">Home</a></li>
+  <li><a class="active" href="login.php">Login</a></li>
+  <li><a class="active" href="about-us.php">About Us</a></li>
 </ul>
 </body>
 </html>
