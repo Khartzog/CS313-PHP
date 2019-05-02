@@ -32,16 +32,16 @@ li a:hover {
 </style>
 </head>
 <body>
-    
-    <button type="button" color="blue" id="Administrator" name="admin">Log in as Administrator</button>
-    
-    <button type="button" color="blue" id="Tester" name="tester">Log in as Tester</button>
-
 <ul>
   <li><a href="home.php">Home</a></li>
   <li><a class="active" href="login.php">Login</a></li>
   <li><a href="about-us.php">About Us</a></li>
 </ul>
+    
+    <button type="button" color="blue" id="Administrator" name="admin">Log in as Administrator</button>
+    
+    <button type="button" color="blue" id="Tester" name="tester">Log in as Tester</button>
+
     
 </body>
 </html> 
