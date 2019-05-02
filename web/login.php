@@ -13,7 +13,7 @@
 
     
     <button type="button" color="blue" id="Administrator" name="admin">Log in as Administrator</button>
-    
+    <br><br>
     <button type="button" color="blue" id="Tester" name="tester">Log in as Tester</button>
 
     
