@@ -8,10 +8,9 @@
 </head>
 <body>
     
+    <button type="button" color="blue" id="Administrator" name="admin">Log in as Administrator</button>
     
-    <input type="button" id="Administrator" name="admin" value="Login "/>
-    <br>
-    <button type="button" id="Tester" name="tester">Log in as Tester</button>
+    <button type="button" color="blue" id="Tester" name="tester">Log in as Tester</button>
     
 </body>
 </html> 
