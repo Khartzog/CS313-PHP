@@ -19,8 +19,9 @@
     <a href="AssignmentsPage.php" class="btn btn-info" role="button">Assignments Page</a>
   </div>
   <h3>Hi! I'm Kaylee</h3>
-  <p>I am a Junior in College, I am 21 years old, and I served a mission in Ecuador.
-  <img src="cinqueterre.jpg" 
+  <p>I am a Junior in College, I am 21 years old, and I served a mission in Ecuador. I really like Harry Poter.</p>
+  <br>
+  <img src="http://ichef.bbci.co.uk/news/976/cpsprodpb/BE66/production/_98524784_8da854f5-071b-438d-8888-28a5b23d1304.jpg" 
   class="img-rounded" alt="Cinque Terre" width="304" height="236">
 </div>
 </body>
