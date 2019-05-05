@@ -36,9 +36,9 @@ li a:hover {
 </head>
 <body>
 <ul>
-  <li><a class="active" href="home.php">Home</a></li>
-  <li><a class="active" href="login.php">Login</a></li>
-  <li><a class="active" href="about-us.php">About Us</a></li>
+  <li><a href="home.php">Home</a></li>
+  <li><a href="login.php">Login</a></li>
+  <li><a href="about-us.php">About Us</a></li>
 </ul>
 </body>
 </html>
