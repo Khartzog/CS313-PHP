@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+<div class="container">
     <h1>Assignments Page</h1>
+    <div class="list-group">
+    <a href="#" class="list-group-item" data-toggle="tooltip" data-placement="top" title="Coming Soon!">Coming Soon</a>
+    <a href="#" class="list-group-item" data-toggle="tooltip" data-placement="top" title="Coming Soon!">Coming Soon</a>
+    <a href="#" class="list-group-item" data-toggle="tooltip" data-placement="top" title="Coming Soon!">Coming Soon</a>
+  </div>
+</div>
 </body>
 </html>
