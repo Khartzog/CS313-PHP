@@ -22,7 +22,7 @@
   <p>I am a Junior in College, I am 21 years old, and I served a mission in Ecuador. I really like Harry Poter.</p>
   <br>
   <img src="http://ichef.bbci.co.uk/news/976/cpsprodpb/BE66/production/_98524784_8da854f5-071b-438d-8888-28a5b23d1304.jpg" 
-  class="img-rounded" alt="Cinque Terre" width="304" height="236">
+  class="img-rounded" alt="Cinque Terre" width="450" height="236">
 </div>
 </body>
 </html>
