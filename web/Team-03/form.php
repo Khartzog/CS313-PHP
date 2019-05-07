@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-<form method="get">
+<form action="action.php" method="post">
 Name: <input type="text" name="name"><br>
 E-mail: <input type="text" name="email"><br>
 Major:<br>

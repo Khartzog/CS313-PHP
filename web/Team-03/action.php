@@ -9,6 +9,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container">
     <?php
     function test_input($data) {
         $data = trim($data);
@@ -21,11 +22,12 @@
       $major = test_input($_POST["major"]);
       $comment = test_input($_POST["comment"]);
       
-      echo "Name: " . $name;
-      echo "Email: " . $email;
-      echo "Major: " . $major;
-      echo "Comments: " . $comment;
+      echo "Name: " . $name . "<br>";
+      echo "Email: " . $email . "<br>";
+      echo "Major: " . $major . "<br>";
+      echo "Comments: " . $comment . "<br>";
     ?>
+    </div>
 
 </body>
 </html>
