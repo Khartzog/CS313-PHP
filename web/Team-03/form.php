@@ -14,10 +14,10 @@
 Name: <input type="text" name="name"><br>
 E-mail: <input type="text" name="email"><br>
 Major:<br>
-<input type="radio" name="major" value="ComputerScience">Computer Science<br>
-<input type="radio" name="major" value="WebDesign&Development">Web Design and Development<br>
-<input type="radio" name="major" value="ComputerInformationTechnology">Computer Information Technology<br>
-<input type="radio" name="major" value="ComputerEngineering">Computer Engineering<br>
+<input type="radio" name="major" value="Computer Science">Computer Science<br>
+<input type="radio" name="major" value="Web Design and Development">Web Design and Development<br>
+<input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br>
+<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br>
 <br>
 Places You have visited: <br>
 <input type="checkbox" name="country[]" value="North America">North America<br>
