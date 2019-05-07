@@ -27,7 +27,8 @@ Places You have visited: <br>
 <input type="checkbox" name="country[]" value="Australia">Australia<br>
 <input type="checkbox" name="country[]" value="Africa">Africa<br>
 <input type="checkbox" name="country[]" value="Antarctica">Antarctica<br>
-Comment: <textarea name="comment" rows="5" cols="40"></textarea><br>
+Comment: <br>
+ <textarea name="comment" rows="5" cols="40"></textarea><br>
 <input type="submit">
 </form>
 </div>
