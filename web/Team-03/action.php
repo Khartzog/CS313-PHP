@@ -23,6 +23,7 @@
       $comment = test_input($_POST["comment"]);
       $country = $_POST["country"];
       $arrayLength = count($country);
+      $Continent = array("NA" => "North America", "SA" => "South America", "E" => "Europe", "As" => "Asia", "Au" => "Austrailia", "Af" => "Africa", "An" => "Antartica");
 
       echo "Name: " . $name . "<br>";
       echo "Email: " . $email . "<br>";
@@ -30,7 +31,7 @@
       echo "Comments: " . $comment . "<br>";
       echo "Places Visited: <br>";
       foreach($country as $value) {
-          echo "$value <br>";
+          echo $Continent["$value"] . "<br>";
       }    
     ?>
     </div>

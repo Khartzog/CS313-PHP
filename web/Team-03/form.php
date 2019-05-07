@@ -26,13 +26,13 @@ Major:<br>
     <input type="radio" name="major" value="Computer Engineering">Computer Engineering<br>-->
 <br>
 Places You have visited: <br>
-<input type="checkbox" name="country[]" value="North America">North America<br>
-<input type="checkbox" name="country[]" value="South America">South America<br>
-<input type="checkbox" name="country[]" value="Europe">Europe<br>
-<input type="checkbox" name="country[]" value="Asia">Asia<br>
-<input type="checkbox" name="country[]" value="Australia">Australia<br>
-<input type="checkbox" name="country[]" value="Africa">Africa<br>
-<input type="checkbox" name="country[]" value="Antarctica">Antarctica<br>
+<input type="checkbox" name="country[]" value="NA">North America<br>
+<input type="checkbox" name="country[]" value="SA">South America<br>
+<input type="checkbox" name="country[]" value="E">Europe<br>
+<input type="checkbox" name="country[]" value="As">Asia<br>
+<input type="checkbox" name="country[]" value="Au">Australia<br>
+<input type="checkbox" name="country[]" value="Af">Africa<br>
+<input type="checkbox" name="country[]" value="An">Antarctica<br>
 Comment: <br><br>
  <textarea name="comment" rows="5" cols="40"></textarea><br>
 <input type="submit">
