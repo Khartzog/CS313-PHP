@@ -14,10 +14,16 @@
 Name: <input type="text" name="name"><br>
 E-mail: <input type="text" name="email"><br>
 Major:<br>
-<input type="radio" name="major" value="Computer Science">Computer Science<br>
-<input type="radio" name="major" value="Web Design and Development">Web Design and Development<br>
-<input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br>
-<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br>
+<?php
+    $majors = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
+    foreach ($majors as $value) {
+        echo "<input type='radio' name='major' value='$value'>$value<br>";
+    }
+    ?>
+    <!--<input type="radio" name="major" value="Computer Science">Computer Science<br>
+    <input type="radio" name="major" value="Web Design and Development">Web Design and Development<br>
+    <input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br>
+    <input type="radio" name="major" value="Computer Engineering">Computer Engineering<br>-->
 <br>
 Places You have visited: <br>
 <input type="checkbox" name="country[]" value="North America">North America<br>
@@ -27,7 +33,7 @@ Places You have visited: <br>
 <input type="checkbox" name="country[]" value="Australia">Australia<br>
 <input type="checkbox" name="country[]" value="Africa">Africa<br>
 <input type="checkbox" name="country[]" value="Antarctica">Antarctica<br>
-Comment: <br>
+Comment: <br><br>
  <textarea name="comment" rows="5" cols="40"></textarea><br>
 <input type="submit">
 </form>
