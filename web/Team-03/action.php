@@ -21,11 +21,17 @@
       $email = test_input($_POST["email"]);
       $major = test_input($_POST["major"]);
       $comment = test_input($_POST["comment"]);
-      
+      $country = test_input($_POST["country"]);
+      $arrayLength = count($country);
+
       echo "Name: " . $name . "<br>";
       echo "Email: " . $email . "<br>";
       echo "Major: " . $major . "<br>";
       echo "Comments: " . $comment . "<br>";
+      echo "Places Visited: <br>";
+      foreach($country as $value) {
+          echo "$value <br>";
+      }    
     ?>
     </div>
 

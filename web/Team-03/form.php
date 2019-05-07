@@ -19,6 +19,14 @@ Major:<br>
 <input type="radio" name="major" value="ComputerInformationTechnology">Computer Information Technology<br>
 <input type="radio" name="major" value="ComputerEngineering">Computer Engineering<br>
 <br>
+Places You have visited: <br>
+<input type="checkbox" name="country" value="North America">North America<br>
+<input type="checkbox" name="country" value="South America">South America<br>
+<input type="checkbox" name="country" value="Europe">Europe<br>
+<input type="checkbox" name="country" value="Asia">Asia<br>
+<input type="checkbox" name="country" value="Australia">Australia<br>
+<input type="checkbox" name="country" value="Africa">Africa<br>
+<input type="checkbox" name="country" value="Antarctica">Antarctica<br>
 Comment: <textarea name="comment" rows="5" cols="40"></textarea><br>
 <input type="submit">
 </form>
