@@ -15,6 +15,18 @@
     <p>Ready to do something fun this Summer? Its time to get a book</p>
     <a href="" class="btn btn-info" role="button">Cart</a>
   </div>
+  <img src="harry-potter.jpg"
+  class="img-rounded" alt="Harry Potter" width="450" height="236"><br>
+  <img src="Hunger-Games.jpg"
+  class="img-rounded" alt="Hunger Games" width="450" height="236"><br>
+  <img src="Fault-in-our-Stars.jpg"
+  class="img-rounded" alt="The Fault in our Stars" width="450" height="236"><br>
+  <img src="Lord-of-the-Rings.jpg"
+  class="img-rounded" alt="Lord of the Rings" width="450" height="236"><br>
+  <img src="City-of-Bones.jpg"
+  class="img-rounded" alt="City of Bones" width="450" height="236"><br>
+  <img src="Percy-Jackson.jpg"
+  class="img-rounded" alt="Percy Jackson" width="450" height="236"><br>
 </div>    
 </body>
 </html>
