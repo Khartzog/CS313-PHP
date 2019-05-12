@@ -15,7 +15,6 @@ session_start();
 <body>
 <?php
 print_r($_SESSION);
-  $_SESSION['cart'] = array("Harry Potter", "Hunger Games", "The Fault in our Stars", "Lord of the Rings", "City of Bones", "Percy Jackson");
   foreach($_SESSION['cart'] as $value){
     if (isset($_GET["$value"])){
       $_SESSION["$value"] = true;
