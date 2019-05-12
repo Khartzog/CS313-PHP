@@ -15,10 +15,10 @@
     <p>Ready to do something fun this Summer? Its time to get a book</p>
     <a href="" class="btn btn-info" role="button">Cart</a>
   </div>
-  <div class="d-flex align-items-stretch bg-light" style="height:450px">
+  <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="harry-potter.jpg" class="img-rounded" alt="Harry Potter" width="150" height="240"></div>
-    <div class="p-2 border"><b>Price: $20.99</b></div>
-    <div class="p-2 border"><button type="button" class="btn btn-success">Add To Cart</button></div>
+    <div><b>Price: $20.99</b><br><button type="button" class="btn btn-success">Add To Cart</button></div>
+    
   </div>
   <img src="Hunger-Games.jpg"
   class="img-rounded" alt="Hunger Games" width="150" height="240"><br>
