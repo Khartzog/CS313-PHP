@@ -33,7 +33,7 @@ session_start();
       foreach ($_SESSION['cart'] as $value){
         if ($_SESSION["$value"] == true){
           echo "<h4>$value</h4><br>";
-          echo "<img src='$value.jpg'><br>";
+          echo "<img src='$value.jpg' class='img-rounded' width='150' height='240'><br>";
           echo "</div>";
         }
       }
