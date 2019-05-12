@@ -17,7 +17,7 @@ session_start();
 print_r($_SESSION);
   foreach($_SESSION['cart'] as $value){
     if (isset($_GET["$value"])){
-      $_SESSION["$value"] = true;
+      $_SESSION["$value"] = false;
     }
   }
 ?>
@@ -29,6 +29,13 @@ print_r($_SESSION);
     <br>
     <a href="checkOut.php" class="btn btn-info" role="button">Check Out</a>
   </div>
+  <?php
+  foreach($_SESSION['cart'] as $value){
+    if ($_SESSION["$value"] == true){
+      echo "<a href='viewCart.php?$value=false'>";
+    }
+  }
+  ?>
     
 </body>
 </html>
