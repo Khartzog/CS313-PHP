@@ -31,7 +31,7 @@ print_r($_SESSION);
   <?php
   foreach($_SESSION['cart'] as $value){
     if ($_SESSION["$value"] == true){
-      echo "<a href='viewCart.php?$value=false'>";
+      echo "<a href='viewCart.php?$value=false'>$value</a>";
     }
   }
   ?>
