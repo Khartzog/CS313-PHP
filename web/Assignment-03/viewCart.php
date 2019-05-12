@@ -28,8 +28,6 @@ print_r($_SESSION);
     <br>
     <br>
     <a href="checkOut.php" class="btn btn-info" role="button">Check Out</a>
-  </div>
-</div>
   <?php
   foreach($_SESSION['cart'] as $value){
     if ($_SESSION["$value"] == true){
@@ -37,6 +35,8 @@ print_r($_SESSION);
     }
   }
   ?>
+  </div>
+</div>
     
 </body>
 </html>
