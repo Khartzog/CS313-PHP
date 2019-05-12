@@ -24,7 +24,7 @@ $_SESSION['cart']=array();
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="harry-potter.jpg" class="img-rounded" alt="Harry Potter" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $20.99   </pre></b></div>
-    <div class="align-self-center"><button type="button" class="btn btn-success" id="B1" name="Harry Poter" value="20.99" onclick="addCart1(), <p>hi</p>">Add To Cart</button></div>
+    <div class="align-self-center"><button type="button" class="btn btn-success" id="B1" name="Harry Poter" value="20.99" onclick="addCart1()">Add To Cart</button></div>
     <div class="align-self-center"><p id="text1"></p></div>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
@@ -79,9 +79,5 @@ $_SESSION['cart']=array();
         document.getElementById("text6").innerHTML = "<pre>  Item Added to Cart</pre>";
     }
 </script>
-        <?php
-        $array6= "Percy Jackson"; 
-        array_push($_SESSION['cart'],$array6);
-        ?>
 </body>
 </html>

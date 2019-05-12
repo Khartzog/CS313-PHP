@@ -9,6 +9,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>View Cart</h1>      
+    <a href="browseItems.php" class="btn btn-info" role="button">Continue Shopping</a>
+    <br>
+    <br>
+    <a href="checkOut.php" class="btn btn-info" role="button">Check Out</a>
+  </div>
     
 </body>
 </html>
