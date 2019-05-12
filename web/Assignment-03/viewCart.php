@@ -14,7 +14,6 @@ session_start();
 </head>
 <body>
 <?php
-print_r($_SESSION);
   foreach($_SESSION['cart'] as $value){
     if (isset($_GET["$value"])){
       $_SESSION["$value"] = false;
@@ -33,8 +32,8 @@ print_r($_SESSION);
   <?php
   foreach($_SESSION['cart'] as $value){
     if ($_SESSION["$value"] == true){
-      echo "<a href='viewCart.php?$value=false'>$value</a>";
-      echo "<img src='$value.jpg'>";
+      echo "<a href='viewCart.php?$value=false'>$value</a><br>";
+      echo "<img src='$value.jpg' class='img-rounded' width='150' height='240'>";
     }
   }
   ?>
