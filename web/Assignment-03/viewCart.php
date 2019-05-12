@@ -28,15 +28,16 @@ print_r($_SESSION);
     <br>
     <br>
     <a href="checkOut.php" class="btn btn-info" role="button">Check Out</a>
+  </div>
+</div>
   <?php
   foreach($_SESSION['cart'] as $value){
     if ($_SESSION["$value"] == true){
       echo "<a href='viewCart.php?$value=false'>$value</a>";
+      echo "<img src='$value.jpg'>";
     }
   }
   ?>
-  </div>
-</div>
     
 </body>
 </html>
