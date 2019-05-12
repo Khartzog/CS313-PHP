@@ -25,6 +25,16 @@
 
       echo "Name: " . $Firstname . " " . $Lastname . "<br>";
       echo "Address: " . $Address . "<br>";
+
+      foreach ($_SESSION['cart'] as $value){
+        if ($_SESSION['$value'] == true){
+          echo "<div class='item row'>";
+          echo "<img src='$value.jpg'>";
+          echo "<h4>$value</h4>";
+          echo "</div>";
+        }
+      }
+
       ?>
 </div>
 </body>

@@ -9,6 +9,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<?php
+print_r($_SESSION);
+  $_SESSION['cart'] = array("Harry Potter", "Hunger Games", "The Fault in our Stars", "Lord of the Rings", "City of Bones", "Percy Jackson");
+  foreach($_SESSION['cart'] as $value){
+    if (isset($_GET['$value'])){
+      $_SESSION['$value'] = true;
+    }
+  }
+?>
 <div class="container">
   <div class="jumbotron">
     <h1>View Cart</h1>      
