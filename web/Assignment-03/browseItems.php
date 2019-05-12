@@ -62,12 +62,12 @@ $_SESSION['cart']=array();
 <script>
     function addCart1() {
         document.getElementById("text1").innerHTML = "<pre>  Item Added to Cart</pre>";
+    }
         <?php
         $array1= array("Name" => "Harry Poter", "Value" => 20.99); 
         array_push($_SESSION['cart'],$array1);
         echo "Name: " . $_SESSION["Name"] . ".<br>";
         ?>
-    }
     function addCart2() {
         document.getElementById("text2").innerHTML = "<pre>  Item Added to Cart</pre>";
         <?php
