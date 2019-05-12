@@ -17,7 +17,7 @@
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="harry-potter.jpg" class="img-rounded" alt="Harry Potter" width="150" height="240"></div>
-    <div class="align-self-center flex-fill"><b>Price: $20.99</b><br><button type="button" class="btn btn-success">Add To Cart</button></div>
+    <div class="align-self-center"><b>Price: $20.99</b><br><button type="button" class="btn btn-success">Add To Cart</button></div>
     <div>Hi</div>
   </div>
   <img src="Hunger-Games.jpg"
