@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+$_SESSION['cart']=array();
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ session_start();
   <div class="jumbotron">
     <h1>Barnes and Mobile</h1>      
     <p>Ready to do something fun this Summer? Its time to get a book</p>
-    <a href="viewCart.php" class="btn btn-info" role="button">Cart</a>
+    <a href="viewCart.php" class="btn btn-info" role="button">View Cart</a>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="harry-potter.jpg" class="img-rounded" alt="Harry Potter" width="150" height="240"></div>
@@ -60,29 +61,47 @@ session_start();
 
 <script>
     function addCart1() {
-        //var input = document.getElementById("demo").value;
-
         document.getElementById("text1").innerHTML = "<pre>  Item Added to Cart</pre>";
+        <?php
+        $array1= array("Name" => "Harry Poter", "Value" => 20.99); 
+        array_push($_SESSION['cart'],$array1);
+        echo "Name: " . $_SESSION["Name"] . ".<br>";
+        ?>
     }
     function addCart2() {
-
         document.getElementById("text2").innerHTML = "<pre>  Item Added to Cart</pre>";
+        <?php
+        $array2= array("Name" => "Hunger Games", "Value" => 21.99); 
+        array_push($_SESSION['cart'],$array2);
+        ?>
     }
     function addCart3() {
-
         document.getElementById("text3").innerHTML = "<pre>  Item Added to Cart</pre>";
+        <?php
+        $array3= array("Name" => "The Fault in our Stars", "Value" => 22.99); 
+        array_push($_SESSION['cart'],$array3);
+        ?>
     }
     function addCart4() {
-
         document.getElementById("text4").innerHTML = "<pre>  Item Added to Cart</pre>";
+        <?php
+        $array4= array("Name" => "Lord of the Rings", "Value" => 19.99); 
+        array_push($_SESSION['cart'],$array4);
+        ?>
     }
     function addCart5() {
-
         document.getElementById("text5").innerHTML = "<pre>  Item Added to Cart</pre>";
+        <?php
+        $array5= array("Name" => "City of Bones", "Value" => 20.99); 
+        array_push($_SESSION['cart'],$array5);
+        ?>
     }
     function addCart6() {
-
         document.getElementById("text6").innerHTML = "<pre>  Item Added to Cart</pre>";
+        <?php
+        $array6= array("Name" => "Percy Jackson", "Value" => 18.99); 
+        array_push($_SESSION['cart'],$array6);
+        ?>
     }
 </script>
 </body>
