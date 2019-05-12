@@ -32,9 +32,8 @@ session_start();
 
       foreach ($_SESSION['cart'] as $value){
         if ($_SESSION["$value"] == true){
-          echo "<div class='item row'>";
-          echo "<img src='$value.jpg'>";
-          echo "<h4>$value</h4>";
+          echo "<h4>$value</h4><br>";
+          echo "<img src='$value.jpg'><br>";
           echo "</div>";
         }
       }

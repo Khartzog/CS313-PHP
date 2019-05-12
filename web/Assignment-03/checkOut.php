@@ -17,9 +17,6 @@ session_start();
   <div class="jumbotron">
     <h1>Check Out</h1>      
     <a href="viewCart.php" class="btn btn-info" role="button">Back to Cart</a>
-    <br>
-    <br>
-    <a href="confirmationPage.php" class="btn btn-info" role="button">Purchase</a>
   </div>
   <form action="confirmationPage.php" method="post">
     <label for="fname">First Name</label>
