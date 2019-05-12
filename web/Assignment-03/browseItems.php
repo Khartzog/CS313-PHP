@@ -60,29 +60,29 @@ session_start();
 
 <script>
     function addCart1() {
-        var input = document.getElementById("demo").value;
+        //var input = document.getElementById("demo").value;
 
-        document.getElementById("text1").innerHTML = "Item Added to Cart";
+        document.getElementById("text1").innerHTML = "<pre>  Item Added to Cart</pre>";
     }
     function addCart2() {
 
-        document.getElementById("text2").innerHTML = "Item Added to Cart";
+        document.getElementById("text2").innerHTML = "<pre>  Item Added to Cart</pre>";
     }
     function addCart3() {
 
-        document.getElementById("text3").innerHTML = "Item Added to Cart";
+        document.getElementById("text3").innerHTML = "<pre>  Item Added to Cart</pre>";
     }
     function addCart4() {
 
-        document.getElementById("text4").innerHTML = "Item Added to Cart";
+        document.getElementById("text4").innerHTML = "<pre>  Item Added to Cart</pre>";
     }
     function addCart5() {
 
-        document.getElementById("text5").innerHTML = "Item Added to Cart";
+        document.getElementById("text5").innerHTML = "<pre>  Item Added to Cart</pre>";
     }
     function addCart6() {
 
-        document.getElementById("text6").innerHTML = "Item Added to Cart";
+        document.getElementById("text6").innerHTML = "<pre>  Item Added to Cart</pre>";
     }
 </script>
 </body>
