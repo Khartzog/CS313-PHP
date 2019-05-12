@@ -28,6 +28,7 @@ session_start();
     <br>
     <a href="checkOut.php" class="btn btn-info" role="button">Check Out</a>
   </div>
+  <h2>Here's Whats In Your Cart: (Click On Item Name to Remove Item From Cart)</h2><br>
 </div>
   <?php
   foreach($_SESSION['cart'] as $value){
