@@ -53,7 +53,7 @@ session_start();
     <div class="align-self-center"><p id="text4"></p></div>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
-    <div><img src="CityOfBones.jpg" class="img-rounded" alt="City of Bones" width="150" height="240"></div>
+    <div><img src="CityofBones.jpg" class="img-rounded" alt="City of Bones" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $20.99   </pre></b></div>
     <div class="align-self-center"><a href="browseItems.php?CityofBones=true"><button type="button" class="btn btn-success" id="B5" name="City of Bones" value="20.99" onclick="addCart5()">Add To Cart</button></a></div>
     <div class="align-self-center"><p id="text5"></p></div>
