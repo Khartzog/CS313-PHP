@@ -17,7 +17,7 @@ session_start();
 <?php
   $_SESSION['cart']=array("HarryPotter", "HungerGames", "TheFaultinourStars", "LordoftheRings", "CityofBones", "PercyJackson");
   foreach($_SESSION['cart'] as $value){
-    if (isset(_GET["$value"])){
+    if (isset($_GET["$value"])){
       echo "Harry Potter";
       $_SESSION["$value"] = true;
     }
