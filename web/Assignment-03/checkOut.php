@@ -17,5 +17,15 @@
     <br>
     <a href="confirmationPage.php" class="btn btn-info" role="button">Purchase</a>
   </div>
+  <form action="confirmationPage.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="address">Address</label>
+    <input type="text" id="address" name="Address" placeholder="Your address..">
+</div>
 </body>
 </html>
