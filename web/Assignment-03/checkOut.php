@@ -17,7 +17,7 @@
     <br>
     <a href="confirmationPage.php" class="btn btn-info" role="button">Purchase</a>
   </div>
-  <form action="confirmationPage.php">
+  <form action="confirmationPage.php" method="post">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 <br>

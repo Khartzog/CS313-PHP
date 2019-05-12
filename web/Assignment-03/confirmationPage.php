@@ -12,5 +12,20 @@
 <div class="jumbotron">
     <h1>Thank You For Your Purchase</h1>      
   </div>
+  <?php
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+      }
+      $Firstname = test_input($_POST["firstname"]);
+      $Lastname = test_input($_POST["lastname"]);
+      $Address = test_input($_POST["Address"]);
+
+      echo "Name: " . $Firstname . " " . $Lastname . "<br>";
+      echo "Address: " . $Address . "<br>";
+      ?>
+</div>
 </body>
 </html>
