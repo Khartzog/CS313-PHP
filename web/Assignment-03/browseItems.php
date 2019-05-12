@@ -23,37 +23,37 @@ session_start();
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="harry-potter.jpg" class="img-rounded" alt="Harry Potter" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $20.99   </pre></b></div>
-    <div class="align-self-center"><button type="button" class="btn btn-success" id="B1" name="Harry Poter" value="20.99" onclick="addCart1">Add To Cart</button></div>
+    <div class="align-self-center"><button type="button" class="btn btn-success" id="B1" name="Harry Poter" value="20.99" onclick="addCart1()">Add To Cart</button></div>
     <div class="align-self-center"><p id="text1"></p></div>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="Hunger-Games.jpg" class="img-rounded" alt="Hunger Games" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $21.99   </pre></b></div>
-    <div class="align-self-center"><button type="button" class="btn btn-success" id="B2" name="Hunger Games" value="21.99" onclick="addCart2">Add To Cart</button></div>
+    <div class="align-self-center"><button type="button" class="btn btn-success" id="B2" name="Hunger Games" value="21.99" onclick="addCart2()">Add To Cart</button></div>
     <div class="align-self-center"><p id="text2"></p></div>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="Fault-in-our-Stars.jpg" class="img-rounded" alt="The Fault in our Stars" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $22.99   </pre></b></div>
-    <div class="align-self-center"><button type="button" class="btn btn-success" id="B3" name="The Fault in our Stars" value="22.99" onclick="addCart3">Add To Cart</button></div>
+    <div class="align-self-center"><button type="button" class="btn btn-success" id="B3" name="The Fault in our Stars" value="22.99" onclick="addCart3()">Add To Cart</button></div>
     <div class="align-self-center"><p id="text3"></p></div>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="Lord-of-the-Rings.jpg" class="img-rounded" alt="Lord of the Rings" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $19.99   </pre></b></div>
-    <div class="align-self-center"><button type="button" class="btn btn-success" id="B4" name="Lord of the Rings" value="19.99" onclick="addCart4">Add To Cart</button></div>
+    <div class="align-self-center"><button type="button" class="btn btn-success" id="B4" name="Lord of the Rings" value="19.99" onclick="addCart4()">Add To Cart</button></div>
     <div class="align-self-center"><p id="text4"></p></div>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="City-Of-Bones.jpg" class="img-rounded" alt="City of Bones" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $20.99   </pre></b></div>
-    <div class="align-self-center"><button type="button" class="btn btn-success" id="B5" name="City of Bones" value="20.99" onclick="addCart5">Add To Cart</button></div>
+    <div class="align-self-center"><button type="button" class="btn btn-success" id="B5" name="City of Bones" value="20.99" onclick="addCart5()">Add To Cart</button></div>
     <div class="align-self-center"><p id="text5"></p></div>
   </div>
   <div class="d-flex align-items-stretch bg-light" style="height:250px">
     <div><img src="Percy-Jackson.jpg" class="img-rounded" alt="Percy Jackson" width="150" height="240"></div>
     <div class="align-self-center"><b><pre>  Price: $18.99   </pre></b></div>
-    <div class="align-self-center"><button type="button" class="btn btn-success" id="B6" name="Percy Jackson" value="18.99" onclick="addCart6">Add To Cart</button></div>
+    <div class="align-self-center"><button type="button" class="btn btn-success" id="B6" name="Percy Jackson" value="18.99" onclick="addCart6()">Add To Cart</button></div>
     <div class="align-self-center"><p id="text6"></p></div>
   </div>
 </div>    
