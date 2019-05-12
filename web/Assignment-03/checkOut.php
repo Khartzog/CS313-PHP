@@ -28,7 +28,7 @@ session_start();
     <label for="address">Address</label>
     <input type="text" id="address" name="Address" placeholder="Your address..">
     <br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Purchase">
   </form>
 </div>
 </body>
