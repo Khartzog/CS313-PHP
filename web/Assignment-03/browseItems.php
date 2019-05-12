@@ -15,7 +15,11 @@
     <p>Ready to do something fun this Summer? Its time to get a book</p>
     <a href="" class="btn btn-info" role="button">Cart</a>
   </div>
-  <img src="harry-potter.jpg"
+  <div class="d-flex align-items-stretch bg-light" style="height:150px">
+    <div class="p-2 border" img src="harry-potter.jpg"></div>
+    <div class="p-2 border">Flex item 2</div>
+    <div class="p-2 border">Flex item 3</div>
+  </div>
   class="img-rounded" alt="Harry Potter" width="150" height="240"><br>
   <img src="Hunger-Games.jpg"
   class="img-rounded" alt="Hunger Games" width="150" height="240"><br>
