@@ -1,6 +1,6 @@
 CREATE TABLE note (
     note_ID         int,
-    content         varchar(max),
+    content         varchar(30),
     user_ID         int REFERENCES user(user_ID),
     speaker_ID      int REFERENCES speaker(speaker_ID),
     conference_ID   int REFERENCES conference(conference_ID),
@@ -36,6 +36,8 @@ INSERT INTO conference VALUES (0, 'April', 2019);
 
 INSERT INTO speaker VALUES (0, Elder Bednar);
 
-INSERT INTO user VALUES (0, 'Kairuf', 'ashes');
+INSERT INTO user VALUES (0, 'Kaylee', 'hashes');
 
 Insert into note VALUES (0)
+
+SELECT * FROM pg_stat_activity;
