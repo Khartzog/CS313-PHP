@@ -18,8 +18,7 @@
 
 <?php
   try{
-    $dbUrl = getenv('postgres://hasznbfctoolrm:615ad5e3cd7d104d0a5037b931a568f6aa9d27ee36cd93e635a8582f0f9db109@ec2-184-72-237-95.compute-1.amazonaws.com:5432/dd7iid19njq5jo
-    ');
+    $dbUrl = getenv('DATABASE_URL');
 
   $dbOpts = parse_url($dbUrl);
 
