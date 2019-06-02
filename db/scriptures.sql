@@ -25,7 +25,7 @@ INSERT INTO topic (name) VALUES ('Sacrifice');
 INSERT INTO topic (name) VALUES ('Charity');
 
 CREATE TABLE scripture_topic (
-  scriptureId int NOT NULL REFERENCES scripture(id),
+  scriptureId int NOT NULL REFERENCES scriptures(scripture_id),
   topicId int NOT NULL REFERENCES topic(id)
   );
 
