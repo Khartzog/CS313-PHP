@@ -14,7 +14,9 @@ $db = get_db();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+<h1>Please Enter User Name</h1><br>
 <input type='text' name='username' value='Username' id='username'><br>
+<h1>Please Enter Password</h1><br>
 <input type='text' name='password' value='Password' id='pass'><br>
     
 </body>
