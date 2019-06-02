@@ -10,11 +10,12 @@
    
 </head>
 <body>
-<form name="form" action="" method="get">
+<form name="form" action="showEntries.php" method="get">
 <h4>Please Enter User Name</h4><br>
-<input type='text' name='username' value='Username' id='username'><br>
+<input type='text' name='username' id='username'><br>
 <h4>Please Enter Password</h4><br>
-<input type='text' name='password' value='Password' id='pass'><br>
+<input type='text' name='password' id='pass'><br>
+<input type="submit">
 </form>
     
 </body>
