@@ -10,10 +10,12 @@
    
 </head>
 <body>
-<h1>Please Enter User Name</h1><br>
+<form name="form" action="" method="get">
+<h4>Please Enter User Name</h4><br>
 <input type='text' name='username' value='Username' id='username'><br>
-<h1>Please Enter Password</h1><br>
+<h4>Please Enter Password</h4><br>
 <input type='text' name='password' value='Password' id='pass'><br>
+</form>
     
 </body>
 </html>
