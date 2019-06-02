@@ -4,8 +4,9 @@ CREATE TABLE userinfo (
     pass            varchar(60)
 );
 
-CREATE TABLE new_journal (
-    journal_name    varchar(50) PRIMARY KEY
+CREATE TABLE journal (
+    journal_id      int PRIMARY KEY,
+    journal_name    varchar(50)
 );
 
 CREATE TABLE media (
@@ -13,12 +14,12 @@ CREATE TABLE media (
     media_name      varchar(80)
 );
 
-CREATE TABLE new_entry (
+CREATE TABLE user_entry (
     entry_id        int,
     entry_content   TEXT,
     entry_date      date,
     userid          int REFERENCES userinfo(userid),
-    journal_name    varchar(50) REFERENCES new_journal(journal_name),
+    journal_id      int REFERENCES journal(journal_id),
     media_id        int REFERENCES media(media_id)
 );
 
