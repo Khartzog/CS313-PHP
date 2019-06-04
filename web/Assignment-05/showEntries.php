@@ -46,7 +46,7 @@ foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal
        echo "journal Name: " . $journalName;
      }
     }   
-    echo $journalName . '<br>' . $row['entry_date'] . '<br><br>';
+    echo $journalName . '<br>' . $row['entry_date'] . '<br>';
     echo $row['entry_content'];
   }
 }
