@@ -28,7 +28,8 @@ $userid = NULL;
 foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
 {
   if ($row['username'] == $username) {
-    echo "I'm in";
+    $userid = $row['userid'];
+    echo $userid;
   }
   
   //echo "User Id: " . $row['userid'] . " " . $row['username'];
