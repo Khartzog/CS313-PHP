@@ -37,7 +37,7 @@ foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal
   if ($row['userid'] == $userid) {
     $journalName = NULL;
     $journalId = $row['journal_id'];
-    echo $journalID . '<br>';
+    echo "this is journal id: " . $journalID . '<br>';
     //foreach ($db->query('SELECT journal_id, journal_name FROM journal') as $row)
     //{
     //  if ($row['journal_id'] == $journalID) {
