@@ -26,7 +26,7 @@ echo $username;
 //echo $userid;
 foreach ($db->query('SELECT userid FROM userinfo') as $row)
 {
-  echo $row['userid'];
+  echo "User Id: " . $row['userid'];
   echo '<br/>';
 }
 
