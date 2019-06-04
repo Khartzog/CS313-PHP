@@ -35,6 +35,7 @@ foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
 foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal_id, media_id FROM user_entry') as $row)
 {
   if ($row['userid'] == $userid) {
+    echo "I'm in again";
     $journalName = NULL;
     $journalId = $row['journal_id'];
     foreach ($db->query('SELECT journal_id, journal_name FROM journal') as $row)
