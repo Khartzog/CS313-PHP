@@ -27,8 +27,12 @@ $userid = NULL;
 //echo $userid;
 foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
 {
-  echo "User Id: " . $row['userid'] . " " . $row['username'];
-  echo '<br/>';
+  if ($row['username'] == $username) {
+    echo "I'm in";
+  }
+  
+  //echo "User Id: " . $row['userid'] . " " . $row['username'];
+  //echo '<br/>';
 }
 
 ?>
