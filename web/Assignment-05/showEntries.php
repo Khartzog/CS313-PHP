@@ -29,11 +29,14 @@ foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
 {
   if ($row['username'] == $username) {
     $userid = $row['userid'];
-    echo $userid;
   }
-  
-  //echo "User Id: " . $row['userid'] . " " . $row['username'];
-  //echo '<br/>';
+}
+
+foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal_id, media_id FROM user_entry') as $row)
+{
+  if ($row['userid'] == $userid) {
+    echo $row['entry_content'];
+  }
 }
 
 ?>
