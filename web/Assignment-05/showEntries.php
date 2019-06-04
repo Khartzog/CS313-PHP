@@ -32,11 +32,13 @@ foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
   }
 }
 
+$journalName = NULL;
+$journalId = NULL;
+
 foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal_id, media_id FROM user_entry') as $row)
 {
   if ($row['userid'] == $userid) {
-    $journalName = NULL;
-    $journalId = $row['journal_id'];
+    $journalID = $row['journal_id'];
     echo "this is journal id: " . $journalID . '<br>';
     //foreach ($db->query('SELECT journal_id, journal_name FROM journal') as $row)
     //{
