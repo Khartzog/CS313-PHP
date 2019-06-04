@@ -25,7 +25,7 @@ echo '<br/>';
 $userid = NULL;
 //$userid = $db->query('SELECT userid FROM userinfo WHERE username == $username');
 //echo $userid;
-foreach ($db->query('SELECT userid, username FROM userinfo WHERE') as $row)
+foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
 {
   echo "User Id: " . $row['userid'] . " " . $row['username'];
   echo '<br/>';
