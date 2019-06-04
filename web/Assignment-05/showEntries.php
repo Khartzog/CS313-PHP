@@ -21,7 +21,7 @@ try{
 }
 $username = $_GET['username'];
 echo $username;
-
+echo '<br/>';
 //$userid = $db->query('SELECT userid FROM userinfo WHERE username == $username');
 //echo $userid;
 foreach ($db->query('SELECT userid FROM userinfo WHERE username == $username') as $row)
