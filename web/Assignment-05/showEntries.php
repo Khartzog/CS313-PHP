@@ -39,13 +39,14 @@ foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal
 {
   if ($row['userid'] == $userid) {
     $journalID = $row['journal_id'];
-    // foreach ($db->query('SELECT journal_id, journal_name FROM journal') as $row)
-    // {
-    //  if ($row['journal_id'] == $journalID) {
-    //    $journalName = $row['journal_name'];
-    //  }
-    // }   
-    //echo $journalName;
+    foreach ($db->query('SELECT journal_id, journal_name FROM journal') as $row)
+    {
+     if ($row['journal_id'] == $journalID) {
+       $journalName = $row['journal_name'];
+       break;
+     }
+    }   
+    echo $journalName;
     echo '<br>' . $row['entry_date'] . '<br>';
     echo $row['entry_content'];
   }
