@@ -35,21 +35,29 @@ foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
 $journalName = NULL;
 $journalId = NULL;
 
-foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal_id, media_id FROM user_entry') as $row)
-{
-  if ($row['userid'] == $userid) {
-    $journalID = $row['journal_id'];
-    foreach ($db->query('SELECT journal_id, journal_name FROM journal') as $row)
-    {
-     if ($row['journal_id'] == $journalID) {
-       $journalName = $row['journal_name'];
-       break;
-     }
-    }   
-    echo $journalName;
-    echo '<br>' . $row['entry_date'] . '<br>';
-    echo $row['entry_content'];
-  }
-}
+// foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal_id, media_id FROM user_entry') as $row)
+// {
+//   if ($row['userid'] == $userid) {
+//     $journalID = $row['journal_id'];
+//     foreach ($db->query('SELECT journal_id, journal_name FROM journal') as $row)
+//     {
+//      if ($row['journal_id'] == $journalID) {
+//        $journalName = $row['journal_name'];
+//        break;
+//      }
+//     }   
+//     echo $journalName;
+//     echo '<br>' . $row['entry_date'] . '<br>';
+//     echo $row['entry_content'];
+//   }
+// }
 
+$joinedResults = $db->prepare('SELECT * FROM user_entry LEFT JOIN journal ON journal_id = user_entry.journal_id WHERE user_entry.userid = $userid');
+$joinedResults->execute();
+
+while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
+  $content = $row['entry_content'];
+
+  echo $content;
+}
 ?>
