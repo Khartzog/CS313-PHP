@@ -18,5 +18,7 @@
 <input type="submit">
 </form>
     
+    <p>In order to get in, you can use: Username - HHartzog, Password - 6813</p><br>
+    <p>Or: Username - Heather, Password - 1234</p>
 </body>
 </html>
