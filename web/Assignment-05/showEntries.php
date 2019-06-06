@@ -52,7 +52,7 @@ $journalId = NULL;
 //   }
 // }
 
-$joinedResults = $db->prepare('SELECT * FROM user_entry LEFT JOIN journal ON journal_id = user_entry.journal_id WHERE user_entry.userid = $userid');
+$joinedResults = $db->prepare('SELECT eu.*, j.journal_name FROM user_entry eu LEFT JOIN journal j ON eu.journal_id = j.journal_id WHERE eu.userid = $userid');
 $joinedResults->execute();
 
 while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
