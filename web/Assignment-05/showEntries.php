@@ -31,7 +31,7 @@ foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
     $userid = $row['userid'];
   }
 }
-
+echo $userid;
 $journalName = NULL;
 $journalId = NULL;
 
