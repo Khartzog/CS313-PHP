@@ -31,9 +31,6 @@ foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
     $userid = $row['userid'];
   }
 }
-echo $userid;
-$journalName = NULL;
-$journalId = NULL;
 
 // foreach ($db->query('SELECT entry_id, entry_content, entry_date, userid, journal_id, media_id FROM user_entry') as $row)
 // {
@@ -56,8 +53,9 @@ $joinedResults = $db->prepare("SELECT eu.*, j.journal_name FROM user_entry eu LE
 $joinedResults->execute();
 
 while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
+  $journalName = $row['journal_name'];
+  $date = $row['entry_day'];
   $content = $row['entry_content'];
-
-  echo $content;
+  echo $journalName . '<br>' . $date . '<br>' . $content;
 }
 ?>
