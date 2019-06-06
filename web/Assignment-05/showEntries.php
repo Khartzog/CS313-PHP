@@ -54,7 +54,7 @@ $joinedResults->execute();
 
 while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
   $journalName = $row['journal_name'];
-  $date = $row['entry_day'];
+  $date = $row['entry_date'];
   $content = $row['entry_content'];
   echo $journalName . '<br>' . $date . '<br>' . $content;
 }
