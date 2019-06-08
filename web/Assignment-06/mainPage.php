@@ -29,7 +29,7 @@
   }
 }
     if($validUser == 'False') {
-        echo '<h1><center>Invalid User Name</center></h1><br>'
+        echo '<h1><center>Invalid User Name</center></h1><br>';
     }
 
 
