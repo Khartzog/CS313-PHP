@@ -8,4 +8,12 @@ INSERT INTO user_entry (entry_id, entry_content, entry_date, userid, journal_id,
 
 INSERT INTO userinfo (userid, username, pass) VALUES (0, 'HHartzog', '6813');
 
-INSERT INTO 
+INSERT INTO userinfo (userid, username, pass) VALUES (1, 'Heather', '1234');
+
+INSERT INTO userinfo (userid, username, pass) VALUES (2, 'Justin', '9999');
+
+INSERT INTO user_entry (entry_id, entry_content, entry_date, userid, journal_id, media_id) VALUES (1, 'I got some awesome pet rats today, they are awesome.', now(), 1, 2, NULL);
+
+INSERT INTO user_entry (entry_id, entry_content, entry_date, userid, journal_id, media_id) VALUES (0, 'It rained a bit today, I forgot my umbrella at work.', now(), 0, 2, NULL);
+
+INSERT INTO user_entry (entry_id, entry_content, entry_date, userid, journal_id, media_id) VALUES (0, 'I worked, it was great', now(), 2, 3, NULL);

@@ -24,3 +24,4 @@ CREATE TABLE user_entry (
 );
 
 
+SELECT eu.*, j.journal_name FROM user_entry eu LEFT JOIN journal j ON eu.journal_id = j.journal_id WHERE eu.userid = 0;
