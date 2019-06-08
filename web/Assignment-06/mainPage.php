@@ -35,6 +35,16 @@
         <button type="submit">Sign In</button><br>
         </form></center>';
     }
+    else if($validUser == 'True') {
+        echo '<center><h1>Welcome ' . $username . '</h1></center>';
+        echo '<br><br>';
+        echo '<center><form action="newEntry.php">
+        <p>Click here to make a new entry.</p>
+        <button type="submit">New Entry</button><br>
+        <p>Click here to see you existing entries.</p>
+        <button type="submit" formaction="viewEntries.php">View Entries</button>
+        </form></center>';
+    }
 
 
 ?>
