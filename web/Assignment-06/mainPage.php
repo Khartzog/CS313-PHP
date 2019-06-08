@@ -30,6 +30,8 @@
 }
     if($validUser == 'False') {
         echo '<h1><center>Invalid User Name</center></h1><br>';
+        echo '<p><center>Please try signing in again.</center></p><br>';
+        echo '<center><button onclick="signIn.php">Sign In</button></center>';
     }
 
 
