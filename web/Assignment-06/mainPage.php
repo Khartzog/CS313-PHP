@@ -1,4 +1,5 @@
 <?php
+session_start();
     try{
         $dbUrl = getenv('DATABASE_URL');
     
@@ -25,6 +26,7 @@
 {
   if ($row['username'] == $username) {
     $validUser = 'True';
+    $_SESSION['user_name'] = $username;
     break;
   }
 }
