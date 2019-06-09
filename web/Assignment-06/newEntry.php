@@ -11,8 +11,6 @@
 <?php
 session_start();
     echo date("Y-m-d") . "<br><br>";
-    $username = $_SESSION['user_name'];
-    echo $username;
 ?>
 
 <form name="form" action="confirmEntry.php" method="get">

@@ -22,11 +22,13 @@ session_start();
     }
     $username = $_GET['username'];
     $validUser = 'False';
-    foreach ($db->query('SELECT username FROM userinfo') as $row)
+    foreach ($db->query('SELECT userid, username FROM userinfo') as $row)
 {
   if ($row['username'] == $username) {
     $validUser = 'True';
+    $userID = $row['userid'];
     $_SESSION['user_name'] = $username;
+    $_SESSION['user_id'] = $userID;
     break;
   }
 }
