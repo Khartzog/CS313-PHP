@@ -40,7 +40,7 @@ try{
         echo '<p>Please enter a journal name.</p>';
         echo '<form action="confirmEntry.php">
         <input type="text" name="journal" id="journal"><br>
-        <input type="hidden" id="content" name="content" value=$_GET["content"]>
+        <input type="hidden" id="content" name="content" value=$content>
         <button type="submit">Make Entry</button><br>
         </form>';
     }
