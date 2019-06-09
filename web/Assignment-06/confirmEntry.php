@@ -37,9 +37,10 @@ try{
         echo '<p>Please enter a journal name.</p>';
         echo '<form action="confirmEntry.php">
         <input type="text" name="journal" id="journal"><br>
+        <button type="submit">Make Entry</button><br>
         </form>';
     }
     else if($isJournal == 'True') {
-      echo 'journal id' . $journalId;
+      
     }
     ?>
