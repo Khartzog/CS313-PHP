@@ -57,5 +57,5 @@ try{
 	  //   $statement->bindValue(':userid', $userID);
 	  //   $statement->bindValue(':journal_id', $journalId);
 	  //   $statement->execute();
-    // }
+     }
     ?>
