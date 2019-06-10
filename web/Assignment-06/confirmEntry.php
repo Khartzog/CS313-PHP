@@ -35,7 +35,6 @@ try{
     
     if ($isJournal == 'False') {
       $content = $_GET['content'];
-      echo $content;
         echo '<center><h4>Invalid Journal Name</h4></center><br>';
         echo '<p>Please enter a journal name.</p>';
         echo '<form action="confirmEntry.php">
@@ -48,14 +47,13 @@ try{
       echo '<center><h1>Entry Added</h1></center>';
 
       $userID = $_SESSION['user_id'];
-      echo $content;
 
-    //   $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(:entry_content, now(), :userid, :journal_id)';
-	  //   $statement = $db->prepare($query);
+      $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(:entry_content, now(), :userid, :journal_id)';
+	    $statement = $db->prepare($query);
 
-  	//   $statement->bindValue(':entry_content', $content);
-	  //   $statement->bindValue(':userid', $userID);
-	  //   $statement->bindValue(':journal_id', $journalId);
-	  //   $statement->execute();
+  	  $statement->bindValue(':entry_content', $content);
+	    $statement->bindValue(':userid', $userID);
+	    $statement->bindValue(':journal_id', $journalId);
+	    $statement->execute();
      }
     ?>
