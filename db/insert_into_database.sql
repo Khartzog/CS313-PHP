@@ -17,3 +17,8 @@ INSERT INTO user_entry (entry_content, entry_date, userid, journal_id) VALUES ('
 INSERT INTO user_entry (entry_content, entry_date, userid, journal_id) VALUES ('It rained a bit today, I forgot my umbrella at work.', now(), 1, 2);
 
 INSERT INTO user_entry (entry_content, entry_date, userid, journal_id) VALUES ('I worked, it was great', now(), 3, 3);
+
+
+
+DELETE FROM user_entry
+WHERE entry_id = 8;

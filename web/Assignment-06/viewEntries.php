@@ -31,7 +31,7 @@ while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
   $journalName = $row['journal_name'];
   $date = $row['entry_date'];
   $content = $row['entry_content'];
-  echo $journalName . '<br>' . $date . '<br><br>' . $content . '<br><br>';
+  echo $date . '<br>' . $content . '<br><br>';
 }
 
 ?>
