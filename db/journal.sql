@@ -26,5 +26,6 @@ CREATE TABLE user_entry (
 
 SELECT eu.*, j.journal_name FROM user_entry eu LEFT JOIN journal j ON eu.journal_id = j.journal_id WHERE eu.userid = 0;
 
+INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(:entry_content, now(), :userid, :journal_id)
 
 DROP TABLE userinfo;
