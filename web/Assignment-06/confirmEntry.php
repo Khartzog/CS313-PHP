@@ -47,6 +47,7 @@ try{
       echo '<center><h1>Entry Added</h1></center>';
       $content = $_GET['content'];
       $userID = $_SESSION['user_id'];
+      $username = $_SESSION['user_name'];
 
       $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(:entry_content, now(), :userid, :journal_id)';
 	    $statement = $db->prepare($query);
@@ -57,6 +58,7 @@ try{
       $statement->execute();
       
       echo '<center><form action="mainPage.php">
+        <input type="hidden" id="username" name="username" value="' . $username . '">
         <p>Click here to go back to home page.</p>
         <button type="submit">Home Page</button><br>
         </form></center>';
