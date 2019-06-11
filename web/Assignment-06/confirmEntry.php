@@ -47,9 +47,6 @@ try{
       echo '<center><h1>Entry Added</h1></center>';
       $content = $_GET['content'];
       $userID = $_SESSION['user_id'];
-      echo 'content: ' . $content . '<br>';
-      echo 'user id: ' . $userID . '<br>';
-      echo 'journal id: ' . $journalId . '<br>';
 
       $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(:entry_content, now(), :userid, :journal_id)';
 	    $statement = $db->prepare($query);
@@ -57,6 +54,11 @@ try{
   	  $statement->bindValue(':entry_content', $content);
 	    $statement->bindValue(':userid', $userID);
 	    $statement->bindValue(':journal_id', $journalId);
-	    $statement->execute();
+      $statement->execute();
+      
+      echo '<center><form action="mainPage.php">
+        <p>Click here to go back to home page.</p>
+        <button type="submit">Home Page</button><br>
+        </form></center>';
      }
     ?>
