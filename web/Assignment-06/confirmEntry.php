@@ -45,7 +45,9 @@ try{
     }
     else if($isJournal == 'True') {
       echo '<center><h1>Entry Added</h1></center>';
-
+      echo $content . '<br>';
+      echo $userID . '<br>';
+      echo $journalId . '<br>';
       $userID = $_SESSION['user_id'];
 
       $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(' . $content . ', now(), ' . $userID . ', ' . $journalId . ')';
