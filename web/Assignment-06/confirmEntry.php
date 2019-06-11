@@ -51,12 +51,12 @@ try{
       echo 'user id: ' . $userID . '<br>';
       echo 'journal id: ' . $journalId . '<br>';
 
-      $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(' . $content . ', now(), ' . $userID . ', ' . $journalId . ')';
+      $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(:entry_content, now(), :userid, :journal_id)';
 	    $statement = $db->prepare($query);
 
-  	  // $statement->bindValue(':entry_content', $content);
-	    // $statement->bindValue(':userid', $userID);
-	    // $statement->bindValue(':journal_id', $journalId);
+  	  $statement->bindValue(':entry_content', $content);
+	    $statement->bindValue(':userid', $userID);
+	    $statement->bindValue(':journal_id', $journalId);
 	    $statement->execute();
      }
     ?>
