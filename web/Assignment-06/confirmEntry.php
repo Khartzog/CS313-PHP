@@ -46,10 +46,10 @@ try{
     else if($isJournal == 'True') {
       echo '<center><h1>Entry Added</h1></center>';
       $content = $_GET['content'];
+      $userID = $_SESSION['user_id'];
       echo 'content: ' . $content . '<br>';
       echo 'user id: ' . $userID . '<br>';
       echo 'journal id: ' . $journalId . '<br>';
-      $userID = $_SESSION['user_id'];
 
       $query = 'INSERT INTO user_entry(entry_content, entry_date, userid, journal_id) VALUES(' . $content . ', now(), ' . $userID . ', ' . $journalId . ')';
 	    $statement = $db->prepare($query);
