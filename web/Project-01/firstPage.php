@@ -8,10 +8,11 @@
    
 </head>
 <body>
-<form action="signIn.php">
+<div>
+    <center><form action="signIn.php">
     <button type="submit">Sign In</button><br>
     <button type="submit" formaction="signUp.php">Sign Up</button>
-    </form>;
-    
+    </form></center>
+    </div>
 </body>
 </html>
