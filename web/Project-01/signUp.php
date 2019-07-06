@@ -9,6 +9,7 @@
 </head>
 <body>
 <h1></h1>
+<div class='textArea'>
 <form name="form" action="signUpConfirm.php" method="get">
 <h4>Please Choose A User Name</h4><br>
 <input type='text' name='username' id='username'><br>
@@ -16,6 +17,6 @@
 <input type='text' name='password' id='password'><br>
 <input type="submit">
 </form>
-    
+</div>
 </body>
 </html>

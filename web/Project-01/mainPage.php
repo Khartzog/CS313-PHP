@@ -34,14 +34,17 @@ session_start();
 }
     if($validUser == 'False') {
         echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
+        echo '<div class="textArea">';
         echo '<h1><center>Invalid User Name</center></h1><br>';
         echo '<p><center>Please try signing in again.</center></p><br>';
         echo '<center><form action="signIn.php">
         <button type="submit">Sign In</button><br>
         </form></center>';
+        echo '</div>';
     }
     else if($validUser == 'True') {
         echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
+        echo '<div class="textArea">';
         echo '<center><h1>Welcome ' . $username . '</h1></center>';
         echo '<br><br>';
         echo '<center><form action="newEntry.php">
@@ -50,6 +53,7 @@ session_start();
         <p>Click here to see you existing entries.</p>
         <button type="submit" formaction="viewEntries.php">View Entries</button>
         </form></center>';
+        echo '</div>';
     }
 
 

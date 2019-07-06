@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class='textArea'>
 <?php
 session_start();
     echo date("Y-m-d") . "<br><br>";
@@ -19,6 +20,7 @@ session_start();
 <input type='text' name='journal' id='journal'><br>
 <input type="submit">
 </form>
+</div>
     
 </body>
 </html>
