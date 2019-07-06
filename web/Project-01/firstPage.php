@@ -12,10 +12,12 @@
        }
 
        .block {
-        width: 25%;
+        width: 15%;
         font-size: 16px;
         cursor: pointer;
         text-align: center;
+        border-radius: 12px;
+        padding: 10px;
         }
    </style>
 </head>
