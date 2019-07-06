@@ -5,21 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-   <style>
-       body {
-           background-image: url("journal.jpg");
-           background-blend-mode: lighten;
-       }
-
-       .block {
-        width: 15%;
-        font-size: 16px;
-        cursor: pointer;
-        text-align: center;
-        border-radius: 12px;
-        padding: 10px;
-        }
-   </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div>
