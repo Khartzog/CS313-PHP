@@ -21,7 +21,8 @@ try{
   die();
 }
 $userID = $_SESSION['user_id'];
-
+echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
+echo '<div class="textArea">';
 echo '<center><h1>Here are your entries</h1></center><br>';
 
 $joinedResults = $db->prepare("SELECT eu.*, j.journal_name FROM user_entry eu LEFT JOIN journal j ON eu.journal_id = j.journal_id WHERE eu.userid = $userID");
@@ -33,5 +34,6 @@ while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
   $content = $row['entry_content'];
   echo $date . '<br>' . $content . '<br><br>';
 }
+echo '</div>';
 
 ?>

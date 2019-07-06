@@ -36,6 +36,7 @@ try{
     if ($isJournal == 'False') {
       $content = $_GET['content'];
         echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
+        echo '<div class="textArea">';
         echo '<center><h4>Invalid Journal Name</h4></center><br>';
         echo '<p>Please enter a journal name.</p>';
         echo '<form action="confirmEntry.php">
@@ -43,9 +44,11 @@ try{
         <input type="hidden" id="content" name="content" value="' . $content . '">
         <button type="submit">Make Entry</button><br>
         </form>';
+        echo '</div>';
     }
     else if($isJournal == 'True') {
       echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
+      echo '<div class="textArea">';
       echo '<center><h1>Entry Added</h1></center>';
       $content = $_GET['content'];
       $userID = $_SESSION['user_id'];
@@ -64,5 +67,6 @@ try{
         <p>Click here to go back to home page.</p>
         <button type="submit">Home Page</button><br>
         </form></center>';
+      echo '</div>';
      }
     ?>
