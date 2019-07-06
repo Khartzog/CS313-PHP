@@ -40,7 +40,7 @@ session_start();
         </form></center>';
     }
     else if($validUser == 'True') {
-        echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>'
+        echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
         echo '<center><h1>Welcome ' . $username . '</h1></center>';
         echo '<br><br>';
         echo '<center><form action="newEntry.php">
