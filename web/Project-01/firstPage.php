@@ -8,7 +8,7 @@
    <style>
        body {
            background-image: url("journal.jpg");
-           opacity: 0.6;
+           background-blend-mode: lighten;
        }
    </style>
 </head>
