@@ -33,6 +33,7 @@ session_start();
   }
 }
     if($validUser == 'False') {
+        echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
         echo '<h1><center>Invalid User Name</center></h1><br>';
         echo '<p><center>Please try signing in again.</center></p><br>';
         echo '<center><form action="signIn.php">
