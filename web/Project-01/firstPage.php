@@ -13,11 +13,9 @@
 
        .block {
         display: block;
-        width: 100%;
+        width: 50%;
         border: none;
-        background-color: #4CAF50;
-        padding: 14px 28px;
-        font-size: 16px;
+        font-size: 12px;
         cursor: pointer;
         text-align: center;
         }
