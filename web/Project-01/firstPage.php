@@ -12,10 +12,8 @@
        }
 
        .block {
-        display: block;
-        width: 50%;
-        border: none;
-        font-size: 12px;
+        width: 25%;
+        font-size: 16px;
         cursor: pointer;
         text-align: center;
         }
