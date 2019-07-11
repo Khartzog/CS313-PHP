@@ -34,7 +34,7 @@ while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
   $content = $row['entry_content'];
   echo $date . '<br>' . $content . '<br><br>';
 }
-$username = $_GET['username'];
+$username = $_SESSION['username'];
 echo '<center><form action="mainPage.php">
         <input type="hidden" id="username" name="username" value="' . $username . '">
         <button type="submit">Back</button><br>
