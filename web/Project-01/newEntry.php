@@ -18,6 +18,12 @@ session_start();
 <textarea name='content' id='content' rows="30" cols="100"></textarea><br>
 <h4>Which journal will you add this entry to?</h4>
 <input type='text' name='journal' id='journal'><br>
+<select name='journal' id='journal'>
+  <option value="Spring 2019 Journal">Spring 2019 Journal</option>
+  <option value="Summer 2019 Journal">Summer 2019 Journal</option>
+  <option value="Fall 2019 Journal">Fall 2019 Journal</option>
+  <option value="Winter 2019 Journal">Winter 2019 Journal</option>
+</select>
 <input type="submit">
 </form>
 </div>
