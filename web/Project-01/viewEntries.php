@@ -33,8 +33,7 @@ while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
   $date = $row['entry_date'];
   $content = $row['entry_content'];
   $entry_id = $row['entry_id'];
-  echo '<input type="radio" name="entry" value="' . $entry_id . '">';
-  //$date . '<br>' . $content . '<br><br>';
+  echo '<input type="radio" name="entry" value="' . $entry_id . '">' . $date . '<br>' . $content . '<br><br>';
 }
 $username = $_SESSION['user_name'];
 echo '<center><form action="mainPage.php">
