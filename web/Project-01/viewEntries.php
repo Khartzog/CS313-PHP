@@ -32,10 +32,11 @@ while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
   $journalName = $row['journal_name'];
   $date = $row['entry_date'];
   $content = $row['entry_content'];
-  echo $date . '<br>' . $content . '<br><br>';
+  $entry_id = $row['entry_id'];
+  echo 'id:' . $entry_id;
+  //echo '<input type="radio" name="entry" value="'$entry_id'">'$date . '<br>' . $content . '<br><br>';
 }
 $username = $_SESSION['user_name'];
-echo 'username:' . $username;
 echo '<center><form action="mainPage.php">
         <input type="hidden" id="username" name="username" value="' . $username . '">
         <button type="submit">Back</button><br>
