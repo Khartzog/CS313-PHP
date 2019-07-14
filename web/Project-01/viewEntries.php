@@ -25,7 +25,7 @@ echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
 echo '<div class="textArea">';
 echo '<center><h1>Here are your entries</h1></center><br>';
 
-echo '<form action="deleteEntry.php">';
+//echo '<form action="deleteEntry.php">';
 $joinedResults = $db->prepare("SELECT eu.*, j.journal_name FROM user_entry eu LEFT JOIN journal j ON eu.journal_id = j.journal_id WHERE eu.userid = $userID");
 $joinedResults->execute();
 while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
@@ -35,9 +35,9 @@ $content = $row[' . entry_content . '];
 $entry_id = $row[' . entry_id . '];
 echo '<input type="radio" name="entry" value="' . $entry_id . '">' . $date . '<br>' . $content . '<br><br>';
 };      
-echo '<button type="submit">Delete Entry</button><br>';
-echo '</form>';
-echo '</div>';
+// echo '<button type="submit">Delete Entry</button><br>';
+// echo '</form>';
+
 
 $username = $_SESSION['user_name'];
 echo '<center><form action="mainPage.php">
