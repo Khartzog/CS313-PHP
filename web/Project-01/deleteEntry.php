@@ -20,9 +20,9 @@ try{
   echo 'Error Connecting!';
   die();
 }
-$userid = $_GET['entry'];
+$entryid = $_GET['entry'];
 
-$query = 'DELETE FROM user_entry WHERE userid = $userid';
+$query = 'DELETE FROM user_entry WHERE entry_id = $entryid';
 $statement = $db->prepare($query);
 
 $statement->execute();
