@@ -21,11 +21,10 @@ try{
   die();
 }
 $entryid = $_GET['entry'];
-$query = 'DELETE FROM user_entry';
-//WHERE entry_id = 22';
-
+$query = 'DELETE FROM user_entry WHERE entry_id = :entryid';
 $statement = $db->prepare($query);
 
+$statement->bindValue(':entryid', $entryid);
 $statement->execute();
 // $statement->bindValue(':entry_content', $content);
 // $statement->bindValue(':userid', $userID);
