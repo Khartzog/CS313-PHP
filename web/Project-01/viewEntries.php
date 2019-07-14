@@ -36,6 +36,7 @@ $entry_id = $row['entry_id'];
 echo '<input type="radio" name="entry" value="' . $entry_id . '">' . $date . '<br>' . $content . '<br><br>';
 };      
 echo '<button type="submit">Delete Entry</button><br>';
+echo '<button type="submit" formaction="updateEntry.php">Edit Entry</button>';
 echo '</form>';
 
 
