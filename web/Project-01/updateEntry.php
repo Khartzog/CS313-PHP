@@ -20,9 +20,20 @@ try{
   echo 'Error Connecting!';
   die();
 }
+$entryid = $_GET['entry'];
+$entryContent = '';
+$entryDate;
+
+foreach ($db->query('SELECT entry_id, entry_content, entry_date FROM user_entry') as $row){
+    if (row['entry_id'] == $entryid){
+        $entryContent = row['entry_content'];
+        $entryDate = row['entry_date'];
+    }
+}
 
 echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
 echo '<div class="textArea">';
 echo '<center><h1>Edit Entry</h1></center>';
+echo $entryDate;
 
-echo '<textarea name="content" id="content" rows="30" cols="100"></textarea>';
+echo '<textarea name="content" id="content" rows="30" cols="100" value="' . $entryContent . '"></textarea>';
