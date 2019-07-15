@@ -23,4 +23,6 @@ try{
 
 echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
 echo '<div class="textArea">';
-echo '<center><h1>Update Entry</h1></center>';
+echo '<center><h1>Edit Entry</h1></center>';
+
+echo '<textarea name="content" id="content" rows="30" cols="100"></textarea>';
