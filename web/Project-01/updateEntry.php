@@ -34,6 +34,6 @@ foreach ($db->query('SELECT entry_id, entry_content, entry_date FROM user_entry'
 echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
 echo '<div class="textArea">';
 echo '<center><h1>Edit Entry</h1></center>';
-echo $entryDate;
+echo $entryDate . '<br>';
 
-echo '<textarea name="content" id="content" rows="30" cols="100" value="' . $entryContent . '"></textarea>';
+echo '<textarea name="content" id="content" rows="30" cols="100">' . $entryContent . '</textarea>';
