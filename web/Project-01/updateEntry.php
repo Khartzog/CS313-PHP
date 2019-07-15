@@ -25,9 +25,9 @@ $entryContent = '';
 $entryDate;
 
 foreach ($db->query('SELECT entry_id, entry_content, entry_date FROM user_entry') as $row){
-    if (row['entry_id'] == $entryid){
-        $entryContent = row['entry_content'];
-        $entryDate = row['entry_date'];
+    if ($row['entry_id'] == $entryid){
+        $entryContent = $row['entry_content'];
+        $entryDate = $row['entry_date'];
     }
 }
 
