@@ -26,6 +26,7 @@ echo '<div class="textArea">';
 echo '<center><h1>Here are your entries</h1></center><br>';
 
 echo '<form action="deleteEntry.php">';
+echo '<button type="submit" formaction="updateEntry.php">Edit Entry</button>';
 $joinedResults = $db->prepare("SELECT eu.*, j.journal_name FROM user_entry eu LEFT JOIN journal j ON eu.journal_id = j.journal_id WHERE eu.userid = $userID");
 $joinedResults->execute();
 while ($row = $joinedResults->fetch(PDO::FETCH_ASSOC)){
@@ -36,7 +37,6 @@ $entry_id = $row['entry_id'];
 echo '<input type="radio" name="entry" value="' . $entry_id . '">' . $date . '<br>' . $content . '<br><br>';
 };      
 echo '<button type="submit">Delete Entry</button><br>';
-echo '<button type="submit" formaction="updateEntry.php">Edit Entry</button>';
 echo '</form>';
 
 
