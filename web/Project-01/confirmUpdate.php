@@ -20,7 +20,26 @@ try{
   echo 'Error Connecting!';
   die();
 }
+$content = $_GET['content'];
+$entryid = $_GET['entryid'];
 
+$query = 'UPDATE user_entry SET entry_content = :entryContent WHERE entry_id = :entryid';
+$statement = $db->prepare($query);
+
+$statement->bindValue(':entryid', $entryid);
+$statement->bindValue(':entryContent', $content);
+$statement->execute();
+
+echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
+echo '<div class="textArea">';
+echo '<center><h1>Entry Updated</h1></center>';
+
+
+echo '<center><form action="viewEntries.php">
+<button type="submit">View Entries</button><br>
+</form></center>';
+
+echo '</div>';
 
 
 ?>

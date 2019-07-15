@@ -26,9 +26,7 @@ $statement = $db->prepare($query);
 
 $statement->bindValue(':entryid', $entryid);
 $statement->execute();
-// $statement->bindValue(':entry_content', $content);
-// $statement->bindValue(':userid', $userID);
-// $statement->bindValue(':journal_id', $journalId);
+
 echo '<head><link rel="stylesheet" type="text/css" href="style.css"></head>';
 echo '<div class="textArea">';
 echo '<center><h1>Entry Deleted</h1></center>';

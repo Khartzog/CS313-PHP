@@ -37,7 +37,8 @@ echo '<center><h1>Edit Entry</h1></center>';
 echo $entryDate . '<br>';
 
 echo '<form name="form" action="confirmUpdate.php" method="get">';
-echo '<textarea name="content" id="content" rows="30" cols="100">' . $entryContent . '</textarea>';
+echo '<textarea name="content" id="content" rows="30" cols="100">' . $entryContent . '</textarea><br>';
+echo '<input type="hidden" id="entryid" name="entryid" value="' . $entryid . '">';
 echo '<button type="submit">Update</button><br>';
 
 ?>
